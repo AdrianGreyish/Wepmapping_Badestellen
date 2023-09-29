@@ -2,7 +2,7 @@ const map = new maplibregl.Map({
     container: 'map',
     style: 'https://api.maptiler.com/maps/a59a3f88-c206-4441-bff6-b545ef7a9e50/style.json?key=lrAb8ZjgXPO37UmKipWz',
     center: [10.165, 54.3635],
-    zoom: 12.1,
+    zoom: 12.3,
     bearing: -80,
     pitch: 45
 });
@@ -187,7 +187,7 @@ const client = new tgm.TargomoClient('westcentraleurope', 'MWQGBPQCHV8L8FVVI1EG'
               'BIKE', '#B1B26C',
               'grey'
             ],
-            'line-width': 1.5
+            'line-width': 1.8
           },
           filter: ['==', ['geometry-type'], 'LineString']
         });
