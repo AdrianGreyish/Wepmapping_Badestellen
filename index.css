@@ -35,7 +35,7 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   position: fixed;
   width: 100%;
   z-index: 2;
-  margin: 1em;
+  margin: 2vw;
   pointer-events: none;
 
   font-size: 14px;
@@ -54,7 +54,7 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
 .infobar img {
   width: 98%;
-margin: 1em;
+margin: 2vw;
 }
 
 .overlay {
@@ -62,7 +62,7 @@ margin: 1em;
   pointer-events: auto;
   top: 4em;
   right: 0;
-  margin: 1em;
+  margin: 2vw;
   z-index: 2;
   font-size: 14px;
   line-height: 18px;
@@ -74,8 +74,9 @@ margin: 1em;
   position: fixed;
   top: 0;
   right: 0;
-  margin: 1em;
+  margin: 2vw;
   z-index: 3;
+  border-width: 1px;
   border-radius: 37px;
   background: #CACE73;
   color: black;
