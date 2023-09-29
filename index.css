@@ -1,0 +1,107 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #map {
+      margin: 0; width: 100%; height: 100%;
+      font-family: "bc-novatica-cyr", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      hyphens: auto;
+      }
+
+#message {
+    display: none; position: absolute;
+    top: 0; background-color: #FF8319;
+    color: white; z-index: 400; font-family: sans-serif;
+    text-align: center; width: 100%; margin: 0px;
+    padding-top: 10px; padding-bottom: 10px;
+}
+#message.visible {
+    display: inline;
+}
+
+.maplibregl-popup {
+max-width: 400px;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+   }
+
+
+.info {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  margin: 1em;
+  pointer-events: none;
+
+  font-size: 14px;
+}
+
+.infotext {
+  width: 20em;
+}
+
+.infobar {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.infobar img {
+  width: 98%;
+margin: 1em;
+}
+
+.overlay {
+  position: fixed;
+  pointer-events: auto;
+  top: 4em;
+  right: 0;
+  margin: 1em;
+  z-index: 2;
+  font-size: 14px;
+  line-height: 18px;
+  width: 400px;
+  display: none;
+}
+
+#overlay-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 3;
+  border-radius: 4px;
+background: #364160;
+box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.06);
+color: white;
+padding: 5px 11px;
+}
+
+.overlay.hidden {
+  display: block;
+  pointer-events: none;
+}
+
+ul {
+  margin-top: 0.5em;
+}
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 40pt;
+  font-weight: normal;
+}
+
+p {
+  font-family: "bc-novatica-cyr", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

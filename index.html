@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schnelle Badung</title>
+
+  <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js" ></script>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css">
+
+  <!-- Include turf for view fitting -->
+  <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+
+  <!--  Include targomo core -->
+  <script src='https://releases.targomo.com/core/latest.min.js'></script>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://use.typekit.net/rkx3ese.css">
+</head>
+
+<body>
+
+  <div class="info">
+      <h1> Schnelle Badung</h1>
+      <p class="infotext">Setze den Marker auf deinen Standort um die kürzeste Route mit dem <strong>Fahrrad</strong> zu einem Badeort in Kiel zu finden.</p>
+      <ul id="route-list"></ul>
+  </div>
+
+
+  <div id="map"></div>
+  <div id="message">No routes found - try moving the pins</div>
+
+  <button id="overlay-button">Info</button>
+  <div class="infobar">
+    <img src="kuestenlinie.svg" alt="">
+  </div>
+
+
+  <div class="overlay">
+
+    <p>Kiel liegt direkt an der Ostsee, doch schaut man sich die Strecke von Schilksee bis Hasselfelde an (22.000m), sind nur 30% der Küstenlinie zum Baden freigegeben. Im Stadtbereich selbst gibt es nur drei Badestellen: Reventlou, Bellevue und Seebar. Zusammengerechnet machen diese drei Badestellen den Kieler EinwohnerInnen nur 42m der Küstenlinie zum Baden zugänglich. Wenn man alternativen wie der Falkensteiner Strand mit dem Fahrrad erreichen möchte, muss je nach Standort einen ganzen Tagesausflug einplanen.</p>
+  </div>
+
+
+</body>
+
+<script src="data.js"></script>
+<script src="kiel-stadtteile.js"></script>
+<script src="main.js"></script>
+
+</html>
